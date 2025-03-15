@@ -6,21 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java and OOP</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Java and OOP",
+        "description": "Understanding Java from an Object Oriented Programming perspective",
+        "url": "https://example.com/java_oop.html",
+        "author": {
+            "@type": "Person",
+            "name": "John Blogger"
+        },
+        "datePublished": "2023-05-15",
+        "mainEntity": {
+            "@type": "Article",
+            "headline": "Java and OOP",
+            "datePublished": "2023-05-15",
+            "author": {
+                "@type": "Person",
+                "name": "John Blogger"
+            }
+        }
+    }
+    </script>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <header>
-        <h1>Java and OOP</h1>
-        <p>Understanding Java from an Object Oriented Programming perspective</p>
+        <h1 itemprop="headline">Java and OOP</h1>
+        <p itemprop="description">Understanding Java from an Object Oriented Programming perspective</p>
         <nav>
             <a href="index.html">Home</a>
         </nav>
     </header>
 
     <div class="container">
-        <article>
-            <h2>Introduction</h2>
-            <div class="post-content">
+        <article itemscope itemtype="https://schema.org/Article">
+            <h2 itemprop="headline">Introduction</h2>
+            <div class="post-content" itemprop="articleBody">
                 <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as
                     few implementation dependencies as possible. It is a general-purpose programming language intended
                     to let application developers write once, run anywhere (WORA), meaning that compiled Java code can

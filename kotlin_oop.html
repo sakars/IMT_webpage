@@ -6,21 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kotlin and OOP</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Kotlin and OOP",
+        "description": "Understanding Kotlin from an Object Oriented Programming perspective",
+        "url": "https://example.com/kotlin_oop.html",
+        "author": {
+            "@type": "Person",
+            "name": "John Blogger"
+        },
+        "datePublished": "2023-05-15",
+        "mainEntity": {
+            "@type": "Article",
+            "headline": "Kotlin and OOP",
+            "datePublished": "2023-05-15",
+            "author": {
+                "@type": "Person",
+                "name": "John Blogger"
+            }
+        }
+    }
+    </script>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <header>
-        <h1>Kotlin and OOP</h1>
-        <p>Understanding Kotlin from an Object Oriented Programming perspective</p>
+        <h1 itemprop="headline">Kotlin and OOP</h1>
+        <p itemprop="description">Understanding Kotlin from an Object Oriented Programming perspective</p>
         <nav>
             <a href="index.html">Home</a>
         </nav>
     </header>
 
     <div class="container">
-        <article>
-            <h2>Introduction</h2>
-            <div class="post-content">
+        <article itemscope itemtype="https://schema.org/Article">
+            <h2 itemprop="headline">Introduction</h2>
+            <div class="post-content" itemprop="articleBody">
                 <p>Kotlin is a statically typed programming language developed by JetBrains. It is designed to be fully
                     interoperable with Java, allowing developers to use both languages within the same project. Kotlin
                     offers a more concise syntax compared to Java, reducing boilerplate code and improving readability.

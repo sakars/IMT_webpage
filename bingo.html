@@ -6,21 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OOP Course Bingo Cards</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "OOP Course Bingo Cards",
+        "description": "Highlighting the most memorable moments from weeks 4-6",
+        "url": "https://example.com/bingo.html",
+        "author": {
+            "@type": "Person",
+            "name": "John Blogger"
+        },
+        "datePublished": "2023-05-15",
+        "mainEntity": {
+            "@type": "Article",
+            "headline": "OOP Course Bingo Cards",
+            "datePublished": "2023-05-15",
+            "author": {
+                "@type": "Person",
+                "name": "John Blogger"
+            }
+        }
+    }
+    </script>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <header>
-        <h1>OOP Course Bingo Cards</h1>
-        <p>Highlighting the most memorable moments from weeks 4-6</p>
+        <h1 itemprop="headline">OOP Course Bingo Cards</h1>
+        <p itemprop="description">Highlighting the most memorable moments from weeks 4-6</p>
         <nav>
             <a href="index.html">Home</a>
         </nav>
     </header>
 
     <div class="container">
-        <article>
-            <h2>Introduction</h2>
-            <div class="post-content">
+        <article itemscope itemtype="https://schema.org/Article">
+            <h2 itemprop="headline">Introduction</h2>
+            <div class="post-content" itemprop="articleBody">
                 <p>To bring some humor to our challenging OOP course, we created bingo cards for weeks 4-6. These bingo
                     cards capture some of the most memorable and bizarre moments from the lectures, providing a
                     light-hearted way to reflect on our experiences. The bingo cards were created using <a
