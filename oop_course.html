@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our OOP Course Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Our OOP Course Review</h1>
+        <p>Discussing the shortcomings of our Object Oriented Programming course</p>
+    </header>
+
+    <div class="container">
+        <article>
+            <section>
+                <h2>Course Shortcomings: A Critical Overview</h2>
+                <p>Our Object Oriented Programming course has several shortcomings that need to be addressed. The course
+                    material is outdated, the examples used are not relevant to current industry practices, and the
+                    assignments do not effectively reinforce the concepts taught in lectures. Additionally, the course
+                    lacks sufficient hands-on projects that would help students gain practical experience.</p>
+            </section>
+            <section>
+                <h2>First Week: A Rocky Start</h2>
+                <p>The first week of our Object Oriented Programming course was cancelled, which set a negative tone for
+                    the rest of the semester. This unexpected cancellation caused confusion and disrupted our learning
+                    schedule, making it difficult to catch up on the missed material.</p>
+            </section>
+            <section>
+                <h2>Second Week: Technical Troubles</h2>
+                <p>The second week of our Object Oriented Programming course was equally frustrating. We spent two hours
+                    watching an Ubuntu installation screen with frequent breaks every 20 minutes. This was not an
+                    effective use of our time, and many students encountered errors and problems during the installation
+                    process. Approximately 70% of the students faced issues, and we had to persuade the instructor to
+                    cancel some graded assignments due to these widespread problems.</p>
+                <p>I have to note that what the previous writer just told you about was described in the course
+                    description as the task for <a href="#week-1">04.02.2025</a> @odo. However, the instructions given
+                    back then differed from what he was showing on screen. Referring back to his documentation, it could
+                    be now seen that he has TWO different instructions on setting up the work environment with
+                    differences along the way -- in one of them, the main work repo was downloaded as a .zip file, in
+                    the other -- it was cloned from his given link.</p>
+                <p>Some of the parts of his tutorials were straight-up not possible to do anymore -- like modifying the
+                    /etc/apt/sources.list file which is no longer present on Xubuntu 24.04, his recommended system -- or
+                    even malicious -- like removing the update-manager and the snap package manager. One of the students
+                    noted that their Firefox installation was gone after they deleted snap. Tough luck.</p>
+                <p>Also, the teacher spent about 5 minutes of our time explaining that Linux is much more superior
+                    compared to Windows. Refer to the time code 13:13 of the first lecture <a
+                        href="https://youtu.be/LpAVOYqRi1g&t=793">here</a>. This will become relevant on the <a
+                        href="#week-5">5th week</a>. Someone should backup his recordings in case they get deleted... //
+                    done</p>
+                <p>During the second week, we spent 3 hours installing Xubuntu on virtual machines. The reason for this
+                    was that the instructor's automated tests and unit tests rely on GNU core utilities, which are
+                    primarily available on GNU/Linux systems. This incompatibility with Windows and macOS systems
+                    necessitated the use of Xubuntu.</p>
+            </section>
+            <section>
+                <h2>Third Week: IDE Confusion</h2>
+                <p>The third week started with the teacher continuing to explain how to set up the work environment,
+                    including downloading the JDK and Maven packages, setting up the cloned project, and demonstrating
+                    how to work in it. Despite the instructions advising the use of Eclipse IDE, the teacher used
+                    IntelliJ IDEA because he "prefers it," which confused many students who followed the original
+                    instructions.</p>
+                <p>When showing how to get IntelliJ IDEA, the teacher downloaded the .tar.gz archive and installed the
+                    program using this method. Using the command to install it with snap was not an option, considering
+                    that the <a href="#snap-bad">snap package manager should be removed</a>. When the teacher attempted
+                    to show the Eclipse IDE, he realized that the JUnit tests did not run. Instead of providing a proper
+                    solution, he demonstrated how to run the tests using the terminal, leaving Eclipse users in a
+                    difficult position.</p>
+                <p>For the next 30 minutes, the teacher struggled to launch the projects with both IDEs. Eventually, he
+                    decided to show us how to connect to his SSH server. The passwords to the SSH server were provided
+                    in a format that included the student's ID, which meant that if someone had another student's ID
+                    number, they could easily log in and change the password, causing issues for the affected student.
+                </p>
+            </section>
+            <section>
+                <h2>Fourth Week: Questionable Responses</h2>
+                <p>The fourth week was quite uneventful in terms of lecture content, but the responses to our questions
+                    were quite memorable. The instructor's replies included statements like "luck favors the strong,"
+                    "only a fool thinks that plans can be implemented without any adjustments," "But in general it is
+                    considered bad programmer, who can't manage to get decent hardware for her/him-self," and "Please
+                    clarify your question, otherwise it just looks like hallucinated garbage." These responses left many
+                    of us feeling frustrated and disrespected.</p>
+            </section>
+            <section>
+                <h2>Fifth Week: Testing Turmoil</h2>
+                <h3>1st Lecture: ChatGPT in Action</h3>
+                <p>Nothing of note in particular, except for the fact that the teacher decided to use ChatGPT to
+                    generate code for activity04, which is needed to complete activity05. Refer to the time code 45:23
+                    of the fourth lecture <a href="https://youtu.be/yLA3bENmenQ?t=2723">here</a>.</p>
+                <h3>2nd Lecture: The Test Debacle</h3>
+                <p>What a disaster...</p>
+                <h4>Test Format: A Messy Affair</h4>
+                <p>The test took place on his odo platform and not E-Studijas, which has relatively decent test options.
+                    The test page itself consisted of two fields for the student identifier and all the answers, and a
+                    submit button.</p>
+                <figure>
+                    <img src="/test-page.png" width="50%" alt="Odo test page">
+                    <figcaption>Odo test page</figcaption>
+                </figure>
+                <p>The answers had to be in the exact format "2=a" otherwise you got 0 points for the
+                    question. The questions themselves were provided as a non-copyable PDF file, so basically an image.
+                    Also, he basically answered the first 3 questions at the start of the lecture, so you could just
+                    copy-paste them.</p>
+                </p>
+                <h4>Test Questions: A Mixed Bag</h4>
+                <p>Not all tests are created equal. Some questions were actually about the course material or Java, even
+                    though they were written in broken English. Some questions were unrelated to OOP, such as his server
+                    IP address, his git repository, and so on. And then there were questions 20 and 21.</p>
+                <figure>
+                    <img src="/q20-q21.png" width="50%" alt="Questions 20 and 21">
+                    <figcaption>Questions 20 and 21</figcaption>
+                </figure>
+                <p>One could argue that all answers are correct, but no, as V.V. said -- "teacher is always right," and
+                    in this case, the correct answers for question 20 is (c) and for question 21 is (a) as was mentioned
+                    in the first lecture.</p>
+                <figure>
+                    <img src="/teacher-always-right.png" width="50%" alt="Teacher is always right">
+                    <figcaption>Teacher is always right</figcaption>
+                </figure>
+                <h4>Post-test Review: More Confusion</h4>
+                <p>After the test ended, he went through all the questions and wasted even more time (approximately 30
+                    minutes) on saying the correct answers to all of the questions. He tried to copy-paste and compile
+                    question 30 three times, failed to do so, said that it should have compiled and the correct answer
+                    to question 3 is (c), failed to elaborate, and ended the lecture 30 minutes early.</p>
+            </section>
+            <section>
+                <h2>Sixth Week: Attendance Drop and Bizarre Tasks</h2>
+                <p>The attendance dropped from approximately 100 students to 38. We were also assigned a bizarre task
+                    where we had to implement classes with methods like <code>vomit()</code> and
+                    <code>killHimself()</code>. I wonder if LU even allows this by law.
+                </p>
+            </section>
+            <section>
+                <h2>Ongoing Concerns</h2>
+                <p>The course is not over yet, and we are increasingly concerned about the quality of the remaining
+                    lectures and assignments. This course is mandatory, and its current state is causing significant
+                    stress and frustration among students. We hope that the issues will be addressed promptly to ensure
+                    a better learning experience for everyone involved.</p>
+            </section>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Software Development Observer Blog. All rights reserved.</p>
+        <p>This blog post is for informational purposes only and represents personal opinions.</p>
+    </footer>
+    <a id="snap-bad"></a>
+</body>
+
+</html>

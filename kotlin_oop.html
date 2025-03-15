@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotlin and OOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kotlin and OOP</h1>
+        <p>Understanding Kotlin from an Object Oriented Programming perspective</p>
+    </header>
+
+    <div class="container">
+        <article>
+            <h2>Introduction</h2>
+            <div class="post-content">
+                <p>Kotlin is a statically typed programming language developed by JetBrains. It is designed to be fully
+                    interoperable with Java, allowing developers to use both languages within the same project. Kotlin
+                    offers a more concise syntax compared to Java, reducing boilerplate code and improving readability.
+                </p>
+                <h3>Comparison with Java</h3>
+                <ul>
+                    <li><strong>Conciseness:</strong> Kotlin reduces the amount of boilerplate code, making the codebase
+                        more concise and readable.</li>
+                    <li><strong>Null Safety:</strong> Kotlin has built-in null safety, which helps prevent null pointer
+                        exceptions, a common issue in Java.</li>
+                    <li><strong>Interoperability:</strong> Kotlin is fully interoperable with Java, meaning you can call
+                        Kotlin code from Java and vice versa.</li>
+                    <li><strong>Coroutines:</strong> Kotlin provides coroutines for asynchronous programming, making it
+                        easier to write non-blocking code.</li>
+                    <li><strong>Smart Casts:</strong> Kotlin's smart cast feature automatically casts types without the
+                        need for explicit casting.</li>
+                </ul>
+                <p>Overall, Kotlin aims to improve developer productivity and code safety while maintaining
+                    compatibility with existing Java codebases.</p>
+
+                <h3>Classes and Objects</h3>
+                <p>In Kotlin, a class is a blueprint for creating objects. A class can contain properties and methods.
+                    Here is an example of a simple class in Kotlin:</p>
+                <pre><code class="language-kotlin">
+class Person(val name: String, var age: Int) {
+    fun greet() {
+        println("Hello, my name is $name and I am $age years old.")
+    }
+}
+                </code></pre>
+                <p>To create an object of the class, you use the <code>new</code> keyword:</p>
+                <pre><code class="language-kotlin">
+val person = Person("John", 30)
+person.greet()
+                </code></pre>
+
+                <h3>Inheritance</h3>
+                <p>Kotlin supports inheritance, allowing you to create a new class that is based on an existing class.
+                    The new class inherits the properties and methods of the existing class. Here is an example:</p>
+                <pre><code class="language-kotlin">
+open class Animal(val name: String) {
+    open fun sound() {
+        println("$name makes a sound")
+    }
+}
+
+class Dog(name: String) : Animal(name) {
+    override fun sound() {
+        println("$name barks")
+    }
+}
+                </code></pre>
+                <p>In this example, the <code>Dog</code> class inherits from the <code>Animal</code> class and overrides
+                    the <code>sound</code> method.</p>
+
+                <h3>Conclusion</h3>
+                <p>Kotlin is a powerful and modern programming language that offers many features to improve developer
+                    productivity and code safety. Its interoperability with Java makes it an excellent choice for
+                    existing Java projects, and its concise syntax and advanced features make it a joy to work with.</p>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Software Development Observer Blog. All rights reserved.</p>
+        <p>This blog post is for informational purposes only and represents personal opinions.</p>
+    </footer>
+</body>
+
+</html>
