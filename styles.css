@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #ff6b6b;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1rem;
     text-align: center;
 }
@@ -25,11 +25,11 @@ header {
 h1,
 h2,
 h3 {
-    color: #333;
+    color: #222222;
 }
 
 .post-meta {
-    color: #777;
+    color: #2c2c2c;
     font-size: 0.9rem;
     margin-bottom: 20px;
 }
